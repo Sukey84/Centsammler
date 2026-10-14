@@ -1,0 +1,85 @@
+/* Gesamte Seite */
+body {
+    margin: 0;
+    padding: 40px 0 150px 0; /* Mehr Platz nach unten für den Scroll-Effekt */
+    background-color: #000000;
+    color: #00ff00;
+    font-family: 'Courier New', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Verhindert Stauchung bei langem Text */
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Hauptfenster */
+.container {
+    width: 1200px; /* Breiter für den Fernseher */
+    max-width: 95%;
+    border: 3px solid #00ff00; /* Etwas dickerer Rahmen */
+    padding: 40px;
+    box-shadow: 0 0 30px #00ff00;
+    background-color: #050505;
+}
+
+/* Überschrift */
+h1 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2.5rem; /* Größere Überschrift */
+    color: #00ff00;
+    text-shadow: 0 0 15px #00ff00;
+}
+
+/* Ausgabebereich */
+#output {
+    white-space: pre-line;
+    line-height: 1.8;
+    font-size: 1.8rem; /* DEUTLICH GRÖSSERE SCHRIFT für den Fernseher */
+}
+
+/* Startbutton */
+button {
+    margin-top: 40px;
+    background-color: transparent;
+    color: #00ff00;
+    border: 3px solid #00ff00;
+    padding: 20px 40px;
+    font-size: 1.6rem; /* Größerer Button */
+    font-family: "Courier New", monospace;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%; /* Button geht über die ganze Breite, sieht im Terminal-Style super aus */
+}
+
+/* Hover-Effekt */
+button:hover {
+    background-color: #00ff00;
+    color: #000;
+    box-shadow: 0 0 25px #00ff00;
+}
+
+/* Cursor-Effekt */
+.cursor {
+    display: inline-block;
+    width: 15px; /* Breiterer Cursor passend zur Schrift */
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+/* Endnachricht (Darlehens-Box) */
+.final-message {
+    margin-top: 50px;
+    padding: 30px;
+    border: 3px solid #00ff00;
+    background-color: rgba(0, 255, 0, 0.05);
+    text-align: center;
+    font-size: 2.2rem; /* Große Hervorhebung am Ende */
+    font-weight: bold;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.2);
+}
