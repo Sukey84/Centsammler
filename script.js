@@ -21,7 +21,7 @@ async function starteProgramm() {
     startButton.disabled = true;
     startButton.style.display = "none";
     output.innerHTML = "";
-
+    
     await schreibe("Initialisiere Finanznetzwerk...", 2000);
     await schreibe("Verbinde mit Servern...", 2500);
     await schreibe("Verbindung hergestellt. ✅", 2000);
@@ -69,6 +69,10 @@ async function starteProgramm() {
             Bereitgestellt von<br>
             Olaf & Daniel<br><br>
             Weil Freunde für einander da sind.
+
+
+            Bitte kontaktiere sie direkt,<br><br> 
+            um die Details zu besprechen :).
         </div>
     `;
 
