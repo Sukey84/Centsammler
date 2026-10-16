@@ -65,7 +65,7 @@ async function starteProgramm() {
     output.innerHTML += `
         <div class="final-message">
             Freundschaftsdarlehen verfügbar<br><br>
-            Betrag: 2.000 €<br><br>
+            Betrag: 800 €<br><br>
             Bereitgestellt von<br>
             Olaf & Daniel<br><br>
             Weil Freunde für einander da sind.
